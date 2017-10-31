@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="csss/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Epicodus Cinemas</h1>
+          <p>Select from the options below to get your ticket pricing:</p>
+          <form id="movie-select">
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Age</label>
+              <select class="form-control" id="age">
+                <option value="1">Youth (0-14)</option>
+                <option value="2">Adult</option>
+                <option value="3">Senior (65+)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Movie</label>
+              <select class="form-control" id="movie">
+                <option value="0">Jigsaw</option>
+                <option value="0">Geostorm</option>
+                <option value="0">Happy Death Day</option>
+                <option value="0">Thank You for Your Service</option>
+                <option value="0">Only the Brave</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Time</label>
+              <select class="form-control" id="time">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Done</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="show-movie-info">
+            <h2></h2>
+
+            <p><strong>Movie: <span class="movie-show"></strong></span></p>
+            <p>Time: <span class="time-show"></span></p>
+            <p>Price: <span class="price-show"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
